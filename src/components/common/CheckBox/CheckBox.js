@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './CheckBox.scss';
+import styles from './CheckBox.module.scss';
 
 const CheckBox = ({ inputType, inputName, inputValue, handleChangeValue }) => {
   return (

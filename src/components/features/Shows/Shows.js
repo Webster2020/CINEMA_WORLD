@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
-import styles from './Shows.scss';
+import styles from './Shows.module.scss';
 import Hour from '../../common/Hour/Hour';
 
 const Shows = ({ hours, movie, selectHourDispatch, selectMovieDispatch }) => {

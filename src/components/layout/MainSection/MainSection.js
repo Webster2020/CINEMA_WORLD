@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './MainSection.scss';
+import styles from './MainSection.module.scss';
 import { Row, Col } from 'react-flexbox-grid';
 import Posters from '../../features/Posters/PostersContainer';
 import MoviesFilter from '../../features/MoviesFilter/MoviesFilterContainer';

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
-import styles from './Seats.scss';
+import styles from './Seats.module.scss';
 import Seat from '../../common/Seat/Seat';
 
 const Seats = ({

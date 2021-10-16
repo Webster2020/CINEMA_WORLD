@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Seat.scss';
+import styles from './Seat.module.scss';
 import Button from '../Button/Button';
 
 const Seat = ({ seat, onClick, isSelected, isBooked }) => {

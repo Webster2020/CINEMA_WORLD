@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ValidMessage.scss';
+import styles from './ValidMessage.module.scss';
 
 const ValidMessage = ({ children, variant, text }) => {
   let style;

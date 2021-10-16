@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Button.scss';
+import styles from './Button.module.scss';
 
 const Button = ({
   children,
@@ -16,7 +16,7 @@ const Button = ({
   //line above to delete in VSC
   if (variant) classes.push(styles[variant]); 
   // - to uncomment in VSC
-  else classes.push('main');
+  else classes.push(styles.main);
 
   let Comp = 'a';
 

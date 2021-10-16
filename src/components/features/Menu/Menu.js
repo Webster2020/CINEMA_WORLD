@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import shortid from 'shortid';
 import { Link } from 'react-router-dom';
-import styles from './Menu.scss';
+import styles from './Menu.module.scss';
 import Button from '../../common/Button/Button';
 
 const Menu = () => {

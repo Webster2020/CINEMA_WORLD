@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
-import styles from './ConfirmData.scss';
+import styles from './ConfirmData.module.scss';
 import { arrToStr } from '../../../utils/arrayToString';
 
 const ConfirmData = ({ confirmData }) => {

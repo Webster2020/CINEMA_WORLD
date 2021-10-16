@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Day.scss';
+import styles from './Day.module.scss';
 import Button from '../Button/Button';
 
 const Day = ({ day, onClick, clicked }) => {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
-import styles from './Days.scss';
+import styles from './Days.module.scss';
 import Day from '../../common/Day/Day';
 
 const Days = ({ days, selectedDay, selectDayDispatch }) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Confirm.scss';
+import styles from './Confirm.module.scss';
 import MainSection from '../../layout/MainSection/MainSection';
 
 const Confirm = () => {

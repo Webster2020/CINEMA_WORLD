@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from './Hour.scss';
+import styles from './Hour.module.scss';
 import Button from '../Button/Button';
 
 const Hour = ({ hour, movie, onClick }) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './NavBar.scss';
+import styles from './NavBar.module.scss';
 import Logo from '../../common/Logo/Logo';
 import Menu from '../../features/Menu/Menu';
 import { Grid, Row, Col } from 'react-flexbox-grid';

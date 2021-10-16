@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import styles from './Form.scss';
+import styles from './Form.module.scss';
 import Input from '../../common/Input/Input';
 import CheckBox from '../../common/CheckBox/CheckBox';
 import Book from '../../common/Book/Book';
