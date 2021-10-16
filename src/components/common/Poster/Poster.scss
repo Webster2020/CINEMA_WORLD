@@ -1,0 +1,115 @@
+@import '../../../styles/global.scss';
+
+.posterWrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin: $base-size * 1 $base-size * 0.5;
+  padding: $base-size * 0.5;
+  background-color: $color-main-two;
+  border: 1px solid $color-main-one;
+  box-shadow: $color-white 0px 0px 5px;
+  overflow: hidden;
+  color: $color-dark;
+  transition: $transition-fast;
+  &:hover {
+    box-shadow: $color-white 0px 0px 10px;
+    cursor: pointer;
+    transition: $transition-fast;
+  }
+}
+
+.posterInfo {
+  position: absolute;
+  display: block;
+  font-family: $font-main;
+  letter-spacing: $base-size * 0.2;
+}
+
+.posterTitle_Home {
+  margin-bottom: $base-size * 0.5;
+  font-family: $font-main;
+  font-size: $base-size * 2.5;
+  letter-spacing: $base-size * 0.2;
+  text-align: center;
+}
+
+.posterInfo_Home {
+  @extend .posterInfo;
+  height: 28px;
+  width: 120px;
+  background-color: $color-main-one;
+  margin-bottom: $base-size * 0.5;
+  font-size: $base-size * 2.5;
+  text-align: center;
+  left: -120px;
+  transition: $transition-mid;
+}
+
+.posterInfo_Home:nth-of-type(1) {
+  bottom: $base-size * 2;
+}
+
+.posterInfo_Home:nth-of-type(2) {
+  bottom: $base-size * 6;
+}
+
+.poster_Home {
+  @extend .posterWrapper;
+  flex-direction: column;
+  height: 400px;
+  width: 250px;
+  &:hover {
+    .posterInfo_Home {
+      left: 0;
+      transition: $transition-mid;
+    }
+  }
+}
+
+.poster_Movies {
+  @extend .posterWrapper;
+  flex-direction: row;
+  height: 150px;
+  width: 250px;
+}
+
+.posterTitle_Movies {
+  position: absolute;
+  width: 50%;
+  font-family: $font-main;
+  font-size: $base-size * 2.6;
+  letter-spacing: $base-size * 0.1;
+  text-align: left;
+  right: $base-size * 1;
+}
+
+.posterImage_Movies {
+  order: 1;
+}
+
+.posterInfo_Movies {
+  @extend .posterInfo;
+  font-size: $base-size * 2;
+  right: $base-size * 1
+}
+
+.posterInfo_Movies:nth-of-type(1) {
+  bottom: $base-size * 1;
+}
+
+.posterInfo_Movies:nth-of-type(2) {
+  bottom: $base-size * 4;
+}
+
+// @media (max-width: 1200px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 576px) {
+// }

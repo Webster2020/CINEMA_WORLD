@@ -1,0 +1,45 @@
+@import '../../../styles/settings.scss';
+
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: $base-size * 0.5 0;
+  input {
+    display: block;
+    margin: 0 $base-size * 0.5;
+    padding: $base-size * 0.5;
+    width: 210px;
+    background-color: inherit;
+    border: 1px solid $color-main-one;
+    font-family: $font-main;
+    font-size: $base-size * 2;
+    color: $color-white;
+    text-decoration: none;
+    &:hover {
+      border: 1px solid $color-main-two;
+      box-shadow: $color-main-two 0px 0px 16px;
+      cursor: pointer;
+      transition: $transition-fast;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:focus + label {
+      background-color: $color-main-two;
+      color: $color-dark;
+    }
+  }
+  label {
+    display: block;
+    margin: $base-size * 0.5 $base-size * 0.5;
+    padding: $base-size * 0.5;
+    width: 70px;
+    border: 1px solid $color-main-one;
+    font-family: $font-main;
+    font-size: $base-size * 2;
+    color: $color-white;
+    text-decoration: none;
+    text-align: center;
+  }
+}

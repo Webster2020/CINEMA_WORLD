@@ -1,0 +1,58 @@
+@import '../../../styles/global.scss';
+
+.validMessageWrapper {
+  position: absolute;
+  display: none;
+  left: 51px;
+  justify-content: center;
+  margin: 0;
+  padding: $base-size * 1.2 $base-size * 0.5;
+  height: 20px;
+  width: 210px;
+  border: 1px dashed $color-white;
+  font-family: $font-main;
+  font-size: $base-size * 2;
+  color: $color-main-one;
+}
+
+.validMessageSeat {
+  display: block;
+  top: 270px;
+  left: 150px;
+  width: 90px;
+}
+
+.validMessageName {
+  display: block;
+  top: 25px;
+}
+
+.validMessageEmail, .validMessageEmail2 {
+  display: block;
+  top: 134px;
+}
+
+.validMessageCheckBox {
+  display: block;
+  top: 150px;
+  width: 70px;
+}
+
+.validMessage {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+// @media (max-width: 1200px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 576px) {
+// }

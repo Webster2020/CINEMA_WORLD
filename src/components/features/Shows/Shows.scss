@@ -1,0 +1,19 @@
+@import '../../../styles/global.scss';
+
+.showsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: calc(100% - 250px);
+  margin: $base-size * 1 $base-size * 0.5;
+  border-bottom: 5px solid $color-main-one;
+}
+
+@media (max-width: 768px) {
+  .showsWrapper  {
+    width: 100%;
+    margin-bottom: $base-size * 2;
+  }
+}

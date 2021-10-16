@@ -1,0 +1,31 @@
+@import '../../../styles/global.scss';
+
+.menuWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: $base-size * 0.5;
+}
+
+.menuButton {
+  display: none;
+}
+
+.menuActive {
+  display: block;
+}
+
+// @media (max-width: 1200px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+@media (max-width: 768px) {
+  .menuWrapper {
+    justify-content: center;
+  }
+}
+
+// @media (max-width: 576px) {
+// }

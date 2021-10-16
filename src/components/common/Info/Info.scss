@@ -1,0 +1,37 @@
+@import '../../../styles/global.scss';
+
+.infoWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: $base-size * 5 $base-size * 0.5;
+  font-family: $font-main;
+  font-size: $base-size * 2;
+  letter-spacing: $base-size * 0.7;
+}
+
+.info {
+  display: block;
+  margin: 0;
+  padding: 0 $base-size * 1;
+  border: 3px dotted $color-main-two;
+  border-radius: $radius * 2;
+  span {
+    font-family: $font-text;
+    font-weight: 700;
+    color: $color-main-one;
+    letter-spacing: $base-size * 0.1;
+  }
+}
+
+// @media (max-width: 1200px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 576px) {
+// }

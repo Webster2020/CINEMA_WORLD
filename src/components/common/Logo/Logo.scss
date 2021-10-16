@@ -1,0 +1,55 @@
+@import '../../../styles/global.scss';
+
+.logoWrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: $base-size * 0.5;
+  //border: 2px solid $color-main-two;
+  font-family: $font-main;
+  font-size: $base-size * 3;
+  letter-spacing: $base-size * 0.7;
+}
+
+.logo {
+  display: block;
+  margin: 0;
+  padding: 0 $base-size * 1;
+  border: 3px dotted $color-main-two;
+  border-radius: $radius * 2;
+  box-shadow: $color-main-two 0px 0px 16px;
+  transition: $transition-fast;
+  &:hover {
+    border: 3px dotted $color-main-one;
+    box-shadow: $color-main-one 0px 0px 16px;
+    filter: brightness(1.15);
+    cursor: pointer;
+    transition: $transition-fast;
+    span {
+      color: $color-main-two;
+      transition: $transition-fast;
+    }
+  }
+  span {
+    font-family: $font-text;
+    font-weight: 700;
+    color: $color-main-one;
+    letter-spacing: $base-size * 0.1;
+    transition: $transition-fast;
+  }
+}
+
+// @media (max-width: 1200px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+@media (max-width: 768px) {
+  .logoWrapper {
+    justify-content: center;
+  }
+}
+
+// @media (max-width: 576px) {
+// }

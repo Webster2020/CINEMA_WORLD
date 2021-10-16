@@ -1,0 +1,29 @@
+@import '../../../styles/global.scss';
+
+.seat {
+  margin: 0 0 10px;
+}
+
+.seatClicked {
+  font-weight: 900;
+  color: $color-dark;
+  background-color: $color-main-two;
+}
+
+.seatBooked {
+  font-weight: 900;
+  color: $color-dark;
+  background-color: $color-main-one;
+}
+
+// @media (max-width: 1200px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 576px) {
+// }

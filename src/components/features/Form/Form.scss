@@ -1,0 +1,12 @@
+@import '../../../styles/global.scss';
+
+.formWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: $base-size * 3 auto;
+  padding: $base-size * 4 0 0;
+  width: 400px;
+  height: 320px;
+  border: 4px dotted transparent;
+}

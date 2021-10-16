@@ -1,0 +1,15 @@
+@import '../../../styles/global.scss';
+
+.headerContainer {
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: $base-size * 0.5 solid $color-main-one;
+}
+
+@media (max-width: 500px) {
+  .headerContainer {
+    height: 255px;
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../../styles/global.scss';
+
+.confirmDataWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: $base-size * 5;
+  font-family: $font-main;
+  color: $color-white;
+}
+
+.confirmDataHeader {
+  margin: 0 0 $base-size * 3;
+  padding: $base-size * 0.5 0;
+  text-align: center;
+  font-family: $font-text;
+  font-size: $base-size * 3.5;
+  font-weight: 400;
+}
+
+.confirmDataTitle {
+  margin: 0 0 $base-size * 1;
+  padding: $base-size * 0.5 0;
+  border-bottom: 2px solid $color-white;
+  font-size: $base-size * 3;
+}
+
+.confirmDataRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  h3 {
+    display: block;
+    margin: $base-size * 0.5 0;
+    font-size: $base-size * 2.5;
+    text-align: start;
+    font-weight: 200;
+  }
+  h3:nth-child(1) {
+    padding: 0 0 $base-size;
+    width: 80px;
+  }
+  h3:nth-child(2) {
+    font-style: italic;
+    width: 350px;
+  }
+}
+
+.confirmDataNumber {
+  font-style: italic;
+  margin-left: $base-size * 2;
+  color: $color-main-one;
+}
+// @media (max-width: 1200px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+@media (max-width: 576px) {
+  .confirmDataRow {
+    h3 {
+      margin: $base-size * 1 0;
+    }
+    h3:nth-child(2) {
+      margin: 0 0 $base-size * 3;
+    }
+  }
+}

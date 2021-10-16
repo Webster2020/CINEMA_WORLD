@@ -1,0 +1,75 @@
+@import '../../../styles/settings.scss';
+
+.checkBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: $base-size * 3 0 0;
+  width: 300px;
+}
+
+.checkBox {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-family: $font-main;
+  font-size: $base-size * 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkMark {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 25px;
+  width: 25px;
+  background-color: inherit;
+  border: 1px solid $color-main-one;
+}
+
+.checkBox:hover input ~ .checkMark {
+  border: 1px solid $color-main-two;
+  box-shadow: $color-main-two 0px 0px 16px;
+  cursor: pointer;
+  transition: $transition-fast;
+}
+
+.checkBox input:checked ~ .checkMark {
+  background-color: $color-main-two;
+  color: $color-dark;
+}
+
+.checkMark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.checkBox input:checked ~ .checkMark:after {
+  display: block;
+}
+
+.checkBox .checkMark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid $color-dark;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

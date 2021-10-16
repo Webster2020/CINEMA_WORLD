@@ -1,0 +1,8 @@
+@import '../../../styles/global.scss';
+
+.navBarContainer {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: $base-size * 0.5 solid $color-main-one;
+}

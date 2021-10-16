@@ -1,0 +1,281 @@
+@import '../../../styles/settings.scss';
+
+.main {
+  display: block;
+  margin: 0 $base-size * 0.5;
+  padding: $base-size * 0.5;
+  border: 1px solid $color-main-one;
+  font-family: $font-main;
+  font-size: $base-size * 2;
+  color: $color-white;
+  text-decoration: none;
+  &:hover {
+    border: 1px solid $color-main-two;
+    box-shadow: $color-main-two 0px 0px 16px;
+    cursor: pointer;
+    transition: $transition-fast;
+  }
+}
+
+.small {
+  @extend .main;
+  padding: $base-size * 0.5;
+  font-size: $base-size * 1.4;
+}
+
+.big {
+  @extend .main;
+  padding: $base-size * 0.8;
+  font-size: $base-size * 2.4;
+}
+
+.linkButton {
+  @extend .small;
+  background: inherit;
+}
+
+.seatButton {
+  @extend .big;
+  width: 50px;
+  text-align: center;
+}
+
+
+// .chatSend {
+//   @extend .small;
+//   font-size: 16px;
+//   padding: 10px 10px;
+//   border-radius: 5px;
+// }
+
+// .long {
+//   @extend .main;
+//   display: block;
+//   width: 100%;
+//   font-size: 13px;
+//   line-height: 24px;
+//   margin: 0;
+//   padding: 5px 0;
+//   font-weight: 400;
+// }
+
+// .big {
+//   @extend .main;
+//   display: block;
+//   font-size: 13px;
+//   line-height: 24px;
+//   width: 120px;
+//   margin: 0 auto;
+//   padding: 10px 20px;
+//   font-weight: 600;
+//   color: #2a2a2a;
+//   border-radius: 5px;
+//   background-color: white;
+// }
+
+// .bigGreen {
+//   @extend .big;
+//   color: white;
+//   background-color: green;
+// }
+
+// .category {
+//   display: block;
+//   width: 100%;
+//   font-size: 13px;
+//   line-height: 24px;
+//   margin: 0;
+//   padding: 5px 0;
+//   font-weight: 400;
+//   background-color: inherit;
+//   color: #2a2a2a;
+//   font-size: 16px;
+//   line-height: 24px;
+//   font-weight: 600;
+//   border-top: 4px solid transparent;
+
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     color: $primary !important;
+//     background-color: $new-furniture-border;
+//     text-decoration: none;
+//     border-top: 4px solid $primary;
+//   }
+// }
+
+// .outline {
+//   display: inline-block;
+//   padding: 5px 10px;
+//   border: 1px solid $button-outline;
+//   color: #2a2a2a;
+//   border: 1px solid $text-color;
+//   color: $text-color;
+//   font-size: 13px;
+//   line-height: 22px;
+
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     background-color: #2a2a2a;
+//     color: $white-text-color;
+//     background-color: $text-color;
+//     color: #ffffff;
+//   }
+// }
+
+// .favourite {
+//   @extend .outline;
+//   background-color: $primary;
+//   color: #ffffff;
+//   border-color: $text-color;
+// }
+
+// .openChatBox {
+//   display: block;
+//   font-size: 18px;
+//   line-height: 24px;
+//   height: 80px;
+//   width: 220px;
+//   margin: 0 auto;
+//   padding: 25px 10px;
+//   font-weight: 600;
+//   color: $white-text-color;
+//   text-align: center;
+//   border-radius: 5px;
+//   background-color: $primary;
+//   box-shadow: 2px 2px 10px 2px silver;
+//   transition: 0.5s;
+//   transition-delay: 0.2s;
+//   overflow: hidden;
+//   &:hover {
+//     color: $primary;
+//     background-color: $white-text-color;
+//     text-decoration: none;
+//     transition: 0.5s;
+//   }
+// }
+
+// .closeChatBox {
+//   display: block;
+//   font-size: 30px;
+//   line-height: 24px;
+//   height: 60px;
+//   width: 60px;
+//   margin: 0 auto;
+//   padding: 16px 20px;
+//   font-weight: 600;
+//   color: $primary;
+//   text-align: center;
+//   border-radius: 50%;
+//   background-color: $white-text-color;
+//   box-shadow: 2px 2px 10px 2px silver;
+//   transition: 0.5s;
+//   &:hover {
+//     color: $white-text-color;
+//     background-color: $primary;
+//     text-decoration: none;
+//     transition: 0.5s;
+//   }
+// }
+
+// .sideArrows {
+//   @extend .outline;
+//   background-color: #ffffff;
+//   color: $text-color;
+//   border-color: $text-color;
+
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     background-color: $primary;
+//     color: #ffffff;
+//     border-color: $primary;
+//   }
+// }
+
+// .favourite2 {
+//   @extend .outline;
+//   background-color: $primary;
+//   color: #ffffff;
+//   border-color: $primary;
+ 
+//   &:not(.noHover):hover {
+//     border-color: $text-color;
+//   }
+// }
+
+// .quantityChange {
+//   @extend .sideArrows;
+  
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     background-color: #ffffff;
+//     color: $primary;
+//     border-color: $primary;
+//   }
+// }
+
+// .facebook {
+//   @extend .favourite2;
+//   background-color: $facebook;
+//   color: #ffffff;
+//   border-color: $facebook;
+ 
+//   &:not(.noHover):hover {
+//     background-color: #ffffff;
+//     color: $text-color;
+//     border-color: $text-color;
+//   }
+// }
+
+// .google {
+//   @extend .sideArrows;
+
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     background-color: $google-red;
+//     border-color: $google-red;
+//   }
+// }
+
+// .tweet {
+//   @extend .sideArrows;
+
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     background-color: $twitter;
+//     border-color: $twitter;
+//   }
+// }
+
+// .pinterest {
+//   @extend .sideArrows;
+
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     background-color: $pinterest;
+//     border-color: $pinterest;
+//   }
+// }
+
+// .linkedin {
+//   @extend .sideArrows;
+
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     background-color: $linkedin;
+//     border-color: $linkedin;
+//   }
+// }
+// .qty {
+//   @extend .main;
+//   color: $feature-box-border;
+//   background-color: white;
+//   border: 1px solid #ddd;
+//   font-weight: 800; 
+//   padding: 7px 15px;
+
+//   &:not(.noHover):hover {
+//     @extend %hover-animations;
+//     color: $white-text-color;
+//     background-color: $primary;
+//   }
+// }
