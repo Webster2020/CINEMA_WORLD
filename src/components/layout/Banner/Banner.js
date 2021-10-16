@@ -1,6 +1,9 @@
 import React from 'react';
+
 import styles from './Banner.module.scss';
+
 import { Carousel } from 'react-carousel-minimal';
+
 import { movies } from '../../../data/dbMovies';
 
 const Banner = () => {

@@ -7,13 +7,11 @@
   justify-content: flex-start;
   margin: 0;
   padding: $base-size * 0.5;
-  //border-right: 5px solid $color-main-one;
 }
 
 .moviesFilter {
   flex: 1;
   display: block;
-  //border: 2px solid $color-main-two;
 }
 
 .moviesFilterTitle {
@@ -39,11 +37,6 @@
   color: $color-dark;
   background-color: $color-main-two;
 }
-// @media (max-width: 1200px) {
-// }
-
-// @media (max-width: 992px) {
-// }
 
 @media (max-width: 768px) {
   .moviesFilterWrapper {
@@ -55,6 +48,3 @@
     border-bottom: 5px solid $color-main-one;
   }
 }
-
-// @media (max-width: 576px) {
-// }

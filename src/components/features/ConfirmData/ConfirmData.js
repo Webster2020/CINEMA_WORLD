@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
+
 import styles from './ConfirmData.module.scss';
+
 import { arrToStr } from '../../../utils/arrayToString';
 
 const ConfirmData = ({ confirmData }) => {
@@ -14,7 +16,7 @@ const ConfirmData = ({ confirmData }) => {
           <div key={shortid.generate()} className={styles.confirmDataRow}>
             <h3>{key.toUpperCase()}:</h3>
             {key === 'seats' ? (
-              <h3>{arrToStr(confirmData[key]) || 'X1, X2'}</h3>
+              <h3>{arrToStr(confirmData[key]) || 'no seats'}</h3>
             ) : (
               <h3>{confirmData[key] || 'hour'}</h3>
             )}

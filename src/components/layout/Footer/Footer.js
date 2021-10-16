@@ -1,7 +1,10 @@
 import React from 'react';
 import { Container, Title, Socials, ButtonContent } from './Footer.styles';
 import shortid from 'shortid';
+
 import Button from '../../common/Button/Button';
+import styles from '../../common/Button/Button.module.scss';
+
 import { links } from '../../../data/dbLinks';
 
 const FooterBar = () => {
@@ -9,7 +12,7 @@ const FooterBar = () => {
     <Container>
       <Title>WEBSTER2020</Title>
       <Socials>
-        {links.map((elem) => {
+        {links.map(elem => {
           return (
             <a 
               key={shortid.generate()} 
@@ -17,7 +20,7 @@ const FooterBar = () => {
               target='_blank' 
               rel='noopener noreferrer'
             >
-              <Button link={true} className={'linkButton'}>
+              <Button link={true} className={styles.linkButton}>
                 <ButtonContent>{elem.icon}</ButtonContent>
               </Button>
             </a>

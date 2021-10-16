@@ -1,13 +1,14 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import shortid from 'shortid';
 import { Link } from 'react-router-dom';
+
 import styles from './Menu.module.scss';
+
 import Button from '../../common/Button/Button';
 
 const Menu = () => {
   
-  const views = ['', 'movies', 'tickets'];
+  const views = ['', 'movies'];
   const [menuActive, setMenuActive] = useState(false);
 
   const showMenu = () => {

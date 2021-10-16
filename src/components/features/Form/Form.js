@@ -1,20 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+
 import styles from './Form.module.scss';
+
 import Input from '../../common/Input/Input';
 import CheckBox from '../../common/CheckBox/CheckBox';
 import Book from '../../common/Book/Book';
 import ValidMessage from '../../common/ValidMessage/ValidMessage';
 
-const Form = ({
-  seatsSelected,
-  setBookingDataDispatch,
-  clearSeatDispatch,
-  setSeatToBookedDispatch,
-}) => {
-  useEffect(() => {
-    console.log(seatsSelected);
-  });
+const Form = ({ seatsSelected, setBookingDataDispatch, clearSeatDispatch, setSeatToBookedDispatch }) => {
+
   const [formValid, setFormValid] = useState(false);
   const [inputNameValue, setInputNameValue] = useState('');
 
@@ -46,13 +41,9 @@ const Form = ({
 
   const validation = (event) => {
     event.preventDefault();
-    console.log('checking form validation!');
-    console.log(seatsSelected);
     setFormValid(false);
     if (seatsSelected.length === 0) {
       setError('noSeat');
-      console.log('noSeat error');
-      console.log(error);
     } else if (inputNameValue === '') {
       setError('emptyName');
     } else if (inputEmailValue === '') {
@@ -62,7 +53,6 @@ const Form = ({
     } else if (!checkBoxValue) {
       setError('unchecked');
     } else {
-      console.log('everything is OK!');
       setBookingDataDispatch({
         name: inputNameValue,
         email: inputEmailValue,

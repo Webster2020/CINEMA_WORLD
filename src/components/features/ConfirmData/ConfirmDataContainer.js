@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import ConfirmData from './ConfirmData';
 import { getBookedData } from '../../../redux/bookingRedux';
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   confirmData: getBookedData(state),
 });
 

@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
+
 import styles from './MoviesFilter.module.scss';
+
 import Button from '../../common/Button/Button';
 
 const MoviesFilter = ({
   captions,
   types,
   years,
-  // movies,
   selectTitleDispatch,
   selectTypeDispatch,
   selectYearDispatch,

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import styles from './Button.module.scss';
 
 const Button = ({
@@ -12,17 +13,11 @@ const Button = ({
   const classes = [];
 
   if (propClassName) classes.push(propClassName);
-  // if (variant) classes.push(variant);
-  //line above to delete in VSC
   if (variant) classes.push(styles[variant]); 
-  // - to uncomment in VSC
   else classes.push(styles.main);
 
   let Comp = 'a';
-
-  if (link) {
-    Comp = 'button';
-  }
+  if (link) Comp = 'button';
 
   return (
     <Comp href='#' {...props} className={classes.join(' ')}>

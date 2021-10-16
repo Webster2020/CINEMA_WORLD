@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
+
 import styles from './Shows.module.scss';
+
 import Hour from '../../common/Hour/Hour';
 
 const Shows = ({ hours, movie, selectHourDispatch, selectMovieDispatch }) => {
+
   const clickHandler = (e, hour, movie) => {
     e.preventDefault();
     selectHourDispatch(hour);
@@ -13,12 +16,12 @@ const Shows = ({ hours, movie, selectHourDispatch, selectMovieDispatch }) => {
 
   return (
     <div className={styles.showsWrapper}>
-      {hours.map((hour) => (
+      {hours.map(hour => (
         <Hour
           key={shortid.generate()}
           hour={hour}
           movie={movie}
-          onClick={(e) => clickHandler(e, hour, movie)}
+          onClick={e => clickHandler(e, hour, movie)}
         />
       ))}
     </div>

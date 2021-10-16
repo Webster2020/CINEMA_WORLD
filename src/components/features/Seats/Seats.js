@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
+
 import styles from './Seats.module.scss';
+
 import Seat from '../../common/Seat/Seat';
 
 const Seats = ({
-  allState,
   seats,
   bookedSeats,
   selectSeatDispatch,
   unselectSeatDispatch,
 }) => {
-  useEffect(() => {
-    console.log(allState);
-  });
 
   const [isClicked, setIsClicked] = useState(false);
   const [clickedSeats, setClickedSeats] = useState([]);
@@ -22,16 +20,12 @@ const Seats = ({
     e.preventDefault();
     if (clickedSeats.indexOf(elem) === -1) {
       setIsClicked(!isClicked);
-      setClickedSeats((selectedSeats) => [...selectedSeats, elem]);
-      console.log('clickedSeats');
-      console.log(clickedSeats);
+      setClickedSeats(selectedSeats => [...selectedSeats, elem]);
       selectSeatDispatch(elem);
     } else {
       setIsClicked(!isClicked);
-      setClickedSeats((clickedSeats) => {
+      setClickedSeats(clickedSeats => {
         clickedSeats.splice(clickedSeats.indexOf(elem), 1);
-        console.log('clickedSeats');
-        console.log(clickedSeats);
         return clickedSeats;
       });
       unselectSeatDispatch(elem);
@@ -40,7 +34,7 @@ const Seats = ({
 
   return (
     <div className={styles.seatsWrapper}>
-      {seats.map((seat) => (
+      {seats.map(seat => (
         <Seat
           key={shortid.generate()}
           seat={seat}
@@ -54,7 +48,6 @@ const Seats = ({
 };
 
 Seats.propTypes = {
-  allState: PropTypes.object,
   seats: PropTypes.array,
   bookedSeats: PropTypes.array,
   selectSeatDispatch: PropTypes.func,

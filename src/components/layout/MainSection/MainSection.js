@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './MainSection.module.scss';
 import { Row, Col } from 'react-flexbox-grid';
+
+import styles from './MainSection.module.scss';
+
 import Posters from '../../features/Posters/PostersContainer';
 import MoviesFilter from '../../features/MoviesFilter/MoviesFilterContainer';
 import Days from '../../features/Days/DaysContainer';
@@ -62,7 +64,3 @@ MainSection.propTypes = {
 };
 
 export default MainSection;
-
-// https://roylee0704.github.io/react-flexbox-grid/
-// https://www.npmjs.com/package/react-flexbox-grid
-// https://www.redbitdev.com/post/getting-started-with-react-flexbox-grid

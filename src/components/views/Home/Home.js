@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Header from '../../layout/Header/Header';
 import MainSection from '../../layout/MainSection/MainSection';
 

@@ -1,8 +1,10 @@
 import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+
 import styles from './NavBar.module.scss';
+
 import Logo from '../../common/Logo/Logo';
 import Menu from '../../features/Menu/Menu';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const NavBar = () => {
   return (

@@ -1,5 +1,7 @@
 import { combineReducers, createStore } from 'redux';
+
 import initialStoreData from '../data/initialStoreData';
+
 import moviesFilterReducer from './moviesFilterRedux';
 import showsFilterReducer from './showsRedux';
 import seatsSelectorReducer from './seatsRedux';
