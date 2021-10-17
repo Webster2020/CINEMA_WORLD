@@ -1,108 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CINAME WORLD
 
-## Available Scripts
+CINEMA WORLD is an application simulating the operation of a cinema website. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). I created this application to train my skills in REACT $ REDUX. This project was prepared mainly with React.js library. Project is divided into components with scss styling files and JS files.
 
-In the project directory, you can run:
+## How it works
+![](CINEMA_WORLD_1.gif)
+![](CINEMA_WORLD_2.gif)
 
-### `yarn start`
+## Link
+https://cinemaworld.webster2020.com/
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to start:
+1. git clone git@github.com:Webster2020/CINEMA_WORLD.git
+2. yarn install
+3. yarn start - run the project and than You can see it on Your device
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+*...or use link if You only want to check how it works
 
-### `yarn test`
+## Used technologies:
+ 1. React with Hooks - as main library
+ 2. Redux - store
+ 3. SCSS - for styling
+ 4. Styled components - for styling FooterBar
+ 5. HTML5 - for content
+ 6. React Router - for routing
+ 7. React Icons
+ 8. React FlexBox Grid
+ 9. Styled Components - to styling Footer 
+ 10. Eslint - to control bugs
+ 11. Husky - to control bugs before every commit
+ 12. Lint Staged - to check only changed files
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Implemented solutions:
+Application is divided into four views: home, movies, tickets and confirm. Menu with logo on the top to switch between views.
+ 1. Home:
+ - slider with movies
+ - list of movie posters with basic information
+ - filters (title, categorie, year)
+ 2. Movies:
+ - filter with week days
+ - list of movies with shows hours
+ - click on any hour drives to 'tickets' page
+ 3. Tickets: 
+ - room view with clickable seats
+ - booking form with validation
+ 4. Confirm:
+ - information about booking (seats, name, email, day, hour, movie) 
 
-### `yarn build`
+## Project architecture
+Project is not divided into components in accordance with the React convention.
+ 1. components with JS, JSX and SCSS
+ 2. root file: index.html
+ 3. store and reducers in redux folder
+ 4. data with initialStoreData
+ 5. others functions in utils
+ 6. configuration files: gitignore, package.json, etc.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How did I create this project?
+Project was prepared based on my own idea and using my current knowledge and skills.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Plan for future development
+- Refactor code
+- Single movie page with details
+- Create logic for more rooms - in this moment selecting each hour in every movie directs to the same room
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Authors
+* **Michal Szwajgier** - *Webster2020* - 
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-### `package json dependecies - to delete`
-
-  "dependencies": {
-    "@emotion/react": "^11.4.1",
-    "@emotion/styled": "^11.3.0",
-    "@material-ui/core": "^4.12.1",
-    "@material-ui/icons": "^4.11.2",
-    "@mui/icons-material": "^5.0.0",
-    "@mui/material": "^5.0.0",
-    "axios": "^0.21.1",
-    "clsx": "^1.0.4",
-    "cors": "2.8.5",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "express": "4.17.1",
-    "express-session": "1.17.0",
-    "mongodb": "3.3.2",
-    "mongoose": "5.7.1",
-    "node-sass": "4.14.1",
-    "nodemon": "1.19.1",
-    "npm-run-all": "^4.1.5",
-    "passport": "0.4.0",
-    "passport-google-oauth20": "2.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.4",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-test-renderer": "^17.0.2",
-    "redux": "^4.1.0",
-    "redux-thunk": "^2.3.0",
-    "shortid": "^2.2.16"
-  },
-  "devDependencies": {
-    "husky": "4.2",
-    "lint-staged": "^11.0.0",
-    "redux-devtools-extension": "^2.13.9"
-  }
-
+## License
+Free licence

@@ -42,7 +42,7 @@ const MoviesFilter = ({
             <Button
               className={clickedTitle === '' && styles.moviesFilterClicked}
               variant='small'
-              onClick={(e) => clickHandler(e, '', 'caption')}
+              onClick={e => clickHandler(e, '', 'caption')}
             >
               -- ALL TITLES --
             </Button>
@@ -54,7 +54,7 @@ const MoviesFilter = ({
                 key={shortid.generate()}
                 variant='small'
                 title={caption}
-                onClick={(e) => clickHandler(e, caption, 'caption')}
+                onClick={e => clickHandler(e, caption, 'caption')}
               >
                 {caption}
               </Button>
@@ -69,7 +69,7 @@ const MoviesFilter = ({
             <Button
               className={clickedType === '' && styles.moviesFilterClicked}
               variant='small'
-              onClick={(e) => clickHandler(e, '', 'type')}
+              onClick={e => clickHandler(e, '', 'type')}
             >
               -- ALL TYPES --
             </Button>
@@ -81,7 +81,7 @@ const MoviesFilter = ({
                 key={shortid.generate()}
                 variant='small'
                 type={type}
-                onClick={(e) => clickHandler(e, type, 'type')}
+                onClick={e => clickHandler(e, type, 'type')}
               >
                 {type}
               </Button>
@@ -96,7 +96,7 @@ const MoviesFilter = ({
             <Button
               className={clickedYear === '' && styles.moviesFilterClicked}
               variant='small'
-              onClick={(e) => clickHandler(e, '', 'year')}
+              onClick={e => clickHandler(e, '', 'year')}
             >
               -- ALL YEARS --
             </Button>
@@ -108,7 +108,7 @@ const MoviesFilter = ({
                 key={shortid.generate()}
                 variant='small'
                 year={year}
-                onClick={(e) => clickHandler(e, year, 'year')}
+                onClick={e => clickHandler(e, year, 'year')}
               >
                 {year}
               </Button>
