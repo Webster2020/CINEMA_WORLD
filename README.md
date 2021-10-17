@@ -1,6 +1,6 @@
 # CINAME WORLD
 
-CINEMA WORLD is an application simulating the operation of a cinema website. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). I created this application to train my skills in REACT $ REDUX. This project was prepared mainly with React.js library. Project is divided into components with scss styling files and JS files.
+CINEMA WORLD is an application simulating the operation of a cinema website. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). I created this application to train my skills in REACT & REDUX. This project was prepared mainly with React.js library. Project is divided into components with scss styling files and JS files.
 
 ## How it works
 ![](CINEMA_WORLD_1.gif)

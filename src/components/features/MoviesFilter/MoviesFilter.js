@@ -15,20 +15,27 @@ const MoviesFilter = ({
   selectYearDispatch,
 }) => {
 
-  const [clickedTitle, setClickedTitle] = useState('');
-  const [clickedType, setClickedType] = useState('');
-  const [clickedYear, setClickedYear] = useState('');
+  const [clickedFilter, setClickedFilter] = useState(
+    {
+      captions: '',
+      types: '',
+      years: '',
+    }
+  );
 
   const clickHandler = (e, elem, argElem) => {
     e.preventDefault();
-    if (argElem === 'caption') {
-      setClickedTitle(elem);
+    setClickedFilter(
+      {
+        ...clickedFilter,
+        [argElem]: elem,
+      }
+    );
+    if (argElem === 'captions') {
       selectTitleDispatch(elem);
-    } else if (argElem === 'type') {
-      setClickedType(elem);
+    } else if (argElem === 'types') {
       selectTypeDispatch(elem);
-    } else if (argElem === 'year') {
-      setClickedYear(elem);
+    } else if (argElem === 'years') {
       selectYearDispatch(elem);
     }
   };
@@ -40,9 +47,9 @@ const MoviesFilter = ({
         <ul className={styles.moviesFilterList}>
           <li className={styles.moviesFilterListElem}>
             <Button
-              className={clickedTitle === '' && styles.moviesFilterClicked}
+              className={clickedFilter.captions === '' && styles.moviesFilterClicked}
               variant='small'
-              onClick={e => clickHandler(e, '', 'caption')}
+              onClick={e => clickHandler(e, '', 'captions')}
             >
               -- ALL TITLES --
             </Button>
@@ -50,11 +57,11 @@ const MoviesFilter = ({
           {captions.map((caption) => (
             <li className={styles.moviesFilterListElem} key={shortid.generate()}>
               <Button
-                className={clickedTitle === caption && styles.moviesFilterClicked}
+                className={clickedFilter.captions === caption && styles.moviesFilterClicked}
                 key={shortid.generate()}
                 variant='small'
                 title={caption}
-                onClick={e => clickHandler(e, caption, 'caption')}
+                onClick={e => clickHandler(e, caption, 'captions')}
               >
                 {caption}
               </Button>
@@ -67,9 +74,9 @@ const MoviesFilter = ({
         <ul className={styles.moviesFilterList}>
           <li className={styles.moviesFilterListElem}>
             <Button
-              className={clickedType === '' && styles.moviesFilterClicked}
+              className={clickedFilter.types === '' && styles.moviesFilterClicked}
               variant='small'
-              onClick={e => clickHandler(e, '', 'type')}
+              onClick={e => clickHandler(e, '', 'types')}
             >
               -- ALL TYPES --
             </Button>
@@ -77,11 +84,11 @@ const MoviesFilter = ({
           {types.map((type) => (
             <li className={styles.moviesFilterListElem} key={shortid.generate()}>
               <Button
-                className={clickedType === type && styles.moviesFilterClicked}
+                className={clickedFilter.types === type && styles.moviesFilterClicked}
                 key={shortid.generate()}
                 variant='small'
                 type={type}
-                onClick={e => clickHandler(e, type, 'type')}
+                onClick={e => clickHandler(e, type, 'types')}
               >
                 {type}
               </Button>
@@ -94,9 +101,9 @@ const MoviesFilter = ({
         <ul className={styles.moviesFilterList}>
           <li className={styles.moviesFilterListElem}>
             <Button
-              className={clickedYear === '' && styles.moviesFilterClicked}
+              className={clickedFilter.years === '' && styles.moviesFilterClicked}
               variant='small'
-              onClick={e => clickHandler(e, '', 'year')}
+              onClick={e => clickHandler(e, '', 'years')}
             >
               -- ALL YEARS --
             </Button>
@@ -104,11 +111,11 @@ const MoviesFilter = ({
           {years.map((year) => (
             <li className={styles.moviesFilterListElem} key={shortid.generate()}>
               <Button
-                className={clickedYear === year && styles.moviesFilterClicked}
+                className={clickedFilter.years === year && styles.moviesFilterClicked}
                 key={shortid.generate()}
                 variant='small'
                 year={year}
-                onClick={e => clickHandler(e, year, 'year')}
+                onClick={e => clickHandler(e, year, 'years')}
               >
                 {year}
               </Button>
